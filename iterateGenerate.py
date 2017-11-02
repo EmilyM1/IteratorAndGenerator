@@ -99,3 +99,13 @@ tuesday = [2,9,16]
 print([temp for temp in zip(monday, tuesday)])
 a,b,c = [temp for temp in zip(monday, tuesday)]
 print(a,c,b) #unpacking
+
+#count words and show words and count of words in input string
+
+def count_words_in_dictionary(d):
+	frequency = {}
+	for word in d.split():
+		frequency[word] = frequency.get(word, 0) +1
+	return frequency
+
+print(count_words_in_dictionary("will it work"))
